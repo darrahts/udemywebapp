@@ -1,0 +1,17 @@
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+h2 {
+    color: red;
+    text-align:center;
+    border: 5px dashed rgb(220, 50, 20, .3);
+    cursor: crosshair;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
