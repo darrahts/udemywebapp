@@ -1,8 +1,10 @@
 
+/*
 body {
     background-image: url(bg.jpg);
     background-size: cover;
 }
+*/
 
 h2 {
     color: red;
@@ -18,6 +20,13 @@ li {
 
 p {
     color: green;
+    text-decoration: underline;
+    text-transform: uppercase;
+
+}
+
+p:hover {
+    color: red;
 }
 /* .something is used for classes*/
 .class1 {
@@ -34,6 +43,14 @@ p {
     border: none;
 }
 
+.form-group:first-child {
+    background-color: blueviolet;
+}
+
+.form-group:last-child {
+    background-color: black;
+}
+
 /*#something is used for IDs*/
 #button-group {
     background: rgba(0,0,255, .3);
@@ -43,10 +60,34 @@ p {
     justify-content: center;
 }
 
+
 h2 p {
     color: rgba(20, 150, 70, .3);
 }
 
 h2 > p {
     color: rgba(180, 150, 70, .6);
+}
+
+h2 + p {
+    text-decoration: none;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 125%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    color: rgba(21, 127, 226, 0.932);
+}
+
+h1 {
+    font-family: 'Coiny', cursive;
+}
+img {
+    float: left;
+}
+
+footer {
+    clear:both;
+    text-align: center;
 }
