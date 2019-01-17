@@ -15,3 +15,38 @@ li {
     list-style: none;
     display: inline-block;
 }
+
+p {
+    color: green;
+}
+/* .something is used for classes*/
+.class1 {
+    border: 5px solid green;
+    color: purple;
+}
+
+.class2 {
+    border: 5px dashed black;
+    color: yellow;
+}
+
+.special {
+    border: none;
+}
+
+/*#something is used for IDs*/
+#button-group {
+    background: rgba(0,0,255, .3);
+    /*need both to center items in a div*/
+    display: flex;
+    align-items: center; /*works without this as well*/
+    justify-content: center;
+}
+
+h2 p {
+    color: rgba(20, 150, 70, .3);
+}
+
+h2 > p {
+    color: rgba(180, 150, 70, .6);
+}
