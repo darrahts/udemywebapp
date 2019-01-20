@@ -1,0 +1,25 @@
+#jumbotron-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 180px;
+}
+
+.btn-orange {
+    background-color: orange;
+}
+
+.btn-orange:hover {
+    background-color: black;
+}
+
+footer {
+    clear:both;
+    text-align: center;
+}
+
+.col {
+    background-color: grey;
+    border: 2px solid black;
+}
