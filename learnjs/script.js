@@ -1,30 +1,14 @@
-var button = document.getElementById("enter");
-var input = document.getElementById("userinput");
-var ul = document.querySelector("ul");
+var color1 = document.getElementById("color1");
+var color2 = document.getElementById("color2");
+var body = document.getElementById("body");
+var bg_style = document.getElementById("background-style");
 
-function inputLength() {
-	return input.value.length;
+function SetGradient() {
+	body.style.background = "linear-gradient(to right, " + 
+		color1.value +"," + color2.value + ")";
+	bg_style.textContent = body.style.background;
 }
 
-function createListElement() {
-	var li = document.createElement("li");
-	li.appendChild(document.createTextNode(input.value));
-	ul.appendChild(li);
-	input.value = "";
-}
+color1.addEventListener("input", SetGradient);
 
-function addListAfterClick() {
-	if (inputLength() > 0) {
-		createListElement();
-	}
-}
-
-function addListAfterKeypress(event) {
-	if (inputLength() > 0 && event.keyCode === 13) {
-		createListElement();
-	}
-}
-
-button.addEventListener("click", addListAfterClick);
-
-input.addEventListener("keypress", addListAfterKeypress);
+color2.addEventListener("input", SetGradient);
