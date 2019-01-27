@@ -21,7 +21,7 @@ hr {
 
 .tron {
   background-position: center;
-  background-image: url("header3.jpg");
+  background-image: url("images/header3.jpg");
   background-size: cover;
   height: 80%;
 }
@@ -51,4 +51,15 @@ img:hover {
 body {
   background-color: rgb(25,25,25);
 }
-  
+
+.contact {
+  color: white;
+}
+
+#map {
+  margin: 3em 3em;
+  display: flex;
+  justify-items: center;
+  align-content: center;
+
+}
